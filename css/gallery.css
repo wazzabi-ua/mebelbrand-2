@@ -1,0 +1,99 @@
+.image-gallery-container {
+    display: block;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    /* padding: 0 0.5em; */
+  }
+  
+  .image-gallery-preview {
+    flex: 4;
+    animation: fadeIn 0.5s forwards;
+    max-width: 100%; /* Додали обмеження максимальної ширини */
+  }
+
+  .image-gallery-preview img {
+    width: 100%; /* Додали масштабування по ширині */
+    height: auto;
+    display: block;
+  }
+  
+  .image-gallery-thumbnails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .thumbnail {
+    width:100%;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  
+  .thumbnail.active {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .opisgallery {
+    font-size: 0.8em;
+    color:#9088a0;
+  }
+
+  @media screen and (min-width: 900px) {
+    .opisgallery {
+      display: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .image-gallery-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-gallery-thumbnails {
+      margin-top: 20px;
+      flex-direction: row; /* Змінено з "flex-direction: column" */
+      justify-content: center;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: auto;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .thumbnail {
+      width: 80px;
+    }
+  }
+
+  
+  @media (min-width: 900px)  {
+    .hidenn {
+     display: none;
+    }
+    }

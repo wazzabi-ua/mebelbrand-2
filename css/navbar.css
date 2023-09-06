@@ -1,0 +1,43 @@
+.colum-half {
+display: flex;
+align-items: center;
+flex: 1;
+}
+
+.colum-half-rigth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+/* 
+.bor-bot {
+  border-bottom: 1px solid #9088a0;
+}
+*/
+
+.rigth-two {
+ right: 0;
+}
+
+.logo {
+  width: 150px;
+  height: 49px;
+	background: url('../img/logo/logo_ligth.svg') 0 0 / 100% no-repeat;
+}
+
+.dark-theme .logo {
+	background: url('../img/logo/logo_dark.svg') 0 0 / 100% no-repeat;
+}
+
+ 
+.left-two {
+  padding-left: 10px;
+}
+
+.rigth-two {
+  padding-right: 10px;
+}
+
+

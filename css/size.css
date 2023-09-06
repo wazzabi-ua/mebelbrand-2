@@ -1,0 +1,142 @@
+#prostir.prostir-25px{
+  display: none;
+}
+.column-3 {
+    width: 50%;
+    padding: 10px;
+  }
+  .tabroz, .opis-column {
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+.opis-column {
+  line-height: 1.5;
+}
+
+.btn-grey {
+    text-decoration: underline;
+    background-color: #D0D3D4;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color:#222125;
+  }
+
+.btn-orange {
+    text-decoration: underline;
+    margin-top: 5px;
+    color: #9088a0;
+  }
+  .opis-column {
+    line-height: 1.5;
+  }
+
+  .tabroz th {
+	background-color: #D0D3D4;
+	font-weight: 500;
+  } 
+
+.tabroz td, .tabroz th {
+	border: 1px solid #9088a0;
+	padding: 7px;
+  }
+.tabroz th {
+	color: #222125;
+  }  
+
+html.light .tabroz td, html.light .tabroz th {
+	border: 1px solid #222125;
+  }
+
+.tabroz td:first-child, .tabroz th:first-child {
+	text-align: left;
+}
+
+.left-p {
+  border-left: 2px solid #577e79;
+  text-align: left;
+  padding: 0 0 0 0.5em;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.warning-blok {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+  }
+  .pten {
+    padding-left: 10px;
+  }
+  .opis-box{
+    text-align: left;
+  }
+
+  .block-slide_info {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+  .canvas-container{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #9088a0;
+  }
+
+  .prostir-25px{
+    max-height: 45px;
+    height: 100%;
+    width: 100%;
+  }
+.button_space{
+  float: left;
+}
+
+  @media screen and (max-width: 1125px) {
+    #image-cont.column-3{
+      display: none;
+    }
+    .column-3{
+      width: 100%;
+    }
+    #prostor.prostir-25px{
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    #prostor.prostir-25px{
+      display: block;
+    }
+    #image-cont.column-3{
+      display: none;
+    }
+    .column-3{
+      padding: 0;
+      max-width: 360px;
+      width: 100%;
+    }
+    .item p {
+      text-align: center;
+      line-height: 1.5;
+      font-size: 0.8em;
+      margin-bottom: 0.5rem;
+    }
+    .tabroz, .opis-column {
+      font-size: 0.8em;
+    }
+    .block-slide_info {
+      padding: 0;
+  }
+  }

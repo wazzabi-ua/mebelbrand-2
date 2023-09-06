@@ -1,0 +1,259 @@
+.rozmiry {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+    padding: 0 0.5em;
+}
+
+  .rozmiry-box {
+    /* margin-top: 2em; */
+    display: flex;
+    flex-wrap: wrap; /* Дозволяємо елементам переходити на наступний рядок, якщо недостатньо місця */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .rozmiry-box {
+        margin-top: -0.5em;
+      }
+ }
+
+ .rozmod {
+  /* margin-top: 2em; */
+  display: flex;
+  flex-wrap: wrap; /* Дозволяємо елементам переходити на наступний рядок, якщо недостатньо місця */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/*
+@media screen and (max-width: 900px) {
+  .rozmod {
+      margin-top: -0.5em;
+    }
+}
+*/
+
+  .rozmiry-column {
+    flex-basis: 50%; /* Кожна колонка займає 50% ширини контейнера у десктопі */
+  }
+
+  .rozcol {
+    flex-basis: 50%; /* Кожна колонка займає 50% ширини контейнера у десктопі */
+  }
+
+  .opis-box {
+   text-align: left;
+   line-height: 1.5;
+  }
+
+
+  .warning-blok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+.buzoc-plashka {
+  /*  border-top: 1px solid #D0D3D4; */
+  color: #222125;
+  padding: 10px 0px 0px 10px;
+  font-weight: 500;
+  }
+
+  .dark-theme .buzoc-plashka {
+    /* border-top: 1px solid #9088a0; */
+    color: #FFF;
+    }
+
+  /* таблиця */
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #D0D3D4; 
+  }
+
+  .tabroz {
+    width: 100%;
+  }
+
+  .tabroz th {
+	background-color: #e0e1e1;
+	font-weight: 500;
+  } 
+
+  .dark-theme .tabroz th {
+    background-color: #222125;
+  }
+
+
+.tabroz td, .tabroz th {
+	padding: 10px 7px;
+
+  }
+
+  @media screen and (max-width: 900px) {
+    .tabroz td, .tabroz th {
+        padding: 7px 7px; 
+      }
+ }
+
+
+.tabroz td:first-child, .tabroz th:first-child {
+	text-align: left;
+}
+
+.opis-column label {
+    font-size: 0.8em;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #D0D3D4;
+    cursor: pointer;
+  }
+
+  .btn-orange {
+    font-family: Montserrat;
+    margin: 10px 0 10px 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 209, 94);
+    color: #222125;
+    cursor: pointer;
+  }
+
+  .btn-grey {
+    font-family: Montserrat;
+    margin: 5px 0px 0px 0px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #e0e1e1;
+    color: #222125;
+    cursor: pointer;
+  }
+
+  .btn-orange:hover, .btn-grey:hover {
+text-decoration: underline;
+  }
+
+.tabroz, .opis-column {
+	  font-size: 0.8em;
+	}
+/*
+@media screen and (max-width: 900px) {
+	.tabroz, .opis-column {
+	  font-size: 0.8em;
+	}
+  }
+*/
+.rozcol img{
+  width: 100%;
+  max-width: 572px;
+}
+  /* Медіа-запит для мобільних пристроїв */
+  @media screen and (max-width: 900px) {
+    .rozmiry-column {
+      flex-basis: 100%; /* Кожна колонка займає 100% ширини контейнера на мобільних пристроях */
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .rozcol {
+      flex-basis: 100%; /* Кожна колонка займає 100% ширини контейнера на мобільних пристроях */
+    }
+  }
+
+  .col-non {
+    overflow: hidden;
+  }
+
+  .img-box-rozmiry {
+    position: relative;
+    max-width: 572px;
+    margin-left: 20px;
+    height: auto; 
+  }
+
+  .img-box-rozmiry-m {
+    position: relative;
+    max-width: 572x;
+    height: auto; 
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .img-box-rozmiry {
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .col-non {
+        display: none;
+      }
+  }
+ 
+  
+
+
+  /* Медіа-запит для мобільних пристроїв */
+  @media screen and (max-width: 1024px) {
+    .rozmiry {
+        padding: 0 1em;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .warning-blok, .opis-box {
+        line-height: 1.3; 
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+     .btn-orange {
+        display: none;
+    }
+  }
+
+  .marker {
+    position: absolute;
+    z-index: 1;
+    margin-left: 10px;
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: #FFF;
+    text-align: center; 
+    font-size: 0.8em;
+  }
+
+  .colo-red {
+    padding:5px;
+    line-height: 1.7;
+  }
+
+  .colo-red span{
+    margin-left: 10px;
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: #FFF;
+    text-align: center; 
+    font-size: 0.8em;
+  }
+
+
+  
+
+  

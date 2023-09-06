@@ -1,0 +1,262 @@
+.tab-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 209, 94);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.tab-button.mny.active {
+  background-color: #ccc;
+  border-radius: 10px;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tab-button.mny span {
+  visibility: hidden;
+}
+
+.tab-button.mny.active span {
+  visibility: visible;
+}
+
+.tab-content-wrapper {
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.mny.active {
+  display: block;
+}
+
+.tab-buttons {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .tab-buttons {
+    top: 10px;
+  }
+}
+
+.divan-ss {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  background: url('../img/ico/divan-ss.svg') 0 0 / 100% no-repeat;
+  z-index: 3;
+}
+
+.divan-rr {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  background: url('../img/ico/divan-rr.svg') 0 0 / 100% no-repeat;
+  z-index: 3;
+}
+
+.button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #ff0000;
+}
+
+.hvostik {
+  content: '';
+  visibility: visible;
+  position: absolute;
+  top: 30%;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  background-color: #ccc;
+  transform: translateY(-50%) rotate(45deg);
+  border-bottom-left-radius: 100%;
+}
+
+.hvostik-two {
+  content: '';
+  visibility: visible;
+  position: absolute;
+  top: 80%;
+  right: -9px;
+  width: 18px;
+  height: 18px;
+  background-color: #ccc;
+  transform: translateY(-50%) rotate(45deg);
+  border-bottom-left-radius: 100%;
+}
+
+.infasofe {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  .infasofe {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.infasofebox {
+  border-left: 0px solid #9088a0;
+  margin-left: 10px;
+  background: linear-gradient(to right, #ffffff, #f4f6f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.dark-theme .infasofebox {
+  background: linear-gradient(to right, #29282c, #222125);
+}
+
+.pfive {
+  width:  130px;
+  height: 55px;
+  padding: 10px;
+}
+
+.wtr {
+  width:100%;
+  height: 100%;
+  background: url('../img/ico/divan-combi-darck.svg') 0 0 / 100% no-repeat;
+}
+
+.wsev {
+  padding: 5px;
+  line-height: 1.3;
+  text-align: left;
+  font-size: 0.8em;
+  color: #9088a0;
+}
+
+.nazva-mob {
+  margin-top: 40px;
+}
+
+.nazva-mob h2 {
+  font-size: 2em;
+}
+
+@media (min-width: 600px) {
+  .nazva-mob {
+    display: none;
+  }
+}
+
+/* plashka 
+.plashkainfo {
+  display: inline-block;
+	position: absolute;
+	margin-top: 8%;
+	right: 20%;
+  max-width: 30px;
+  max-height: 30px;
+  z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .plashkainfo {
+      margin-top: 15%;
+      right: 5%;
+  }
+}
+
+.plashkainfo button {
+  cursor: pointer;
+}
+
+*/
+.opismesch {
+  color: #9088a0;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+.plashka {
+	display: inline-block;
+	position: absolute;
+	border-radius: 80px 80px 80px 0px;
+	margin-top: 3%;
+	right: 0;
+	/*
+	width: 120px;
+	height: 120px;
+	background-color: #f2ab60;
+	animation:animatebottom 0.6s;
+	*/
+	width: calc(3vw + 3vh + 2vmin);
+	height: calc(3vw + 3vh + 2vmin);
+	max-width: 150px;
+	max-height: 150px;
+	background: linear-gradient(90deg, #f2ab60, #fff017);
+	background-size: 200% 200%;
+	animation: animatebottom 0.6s, GradientAnimation 3s ease-in-out infinite;
+}
+	@keyframes GradientAnimation {
+		0% {background-position:left}
+		50% {background-position:right}
+		100% {background-position:left}
+	}
+
+/*
+		bottom: calc(10px * 11);
+font-size: calc(0.5vw + 0.5vh + 2vmin);
+*/
+
+@media (max-width: 600px) {
+	.plashka {
+		margin-top: -8%;
+		}}	
+    
+.plashkabox p { 
+  margin-top: 25%;
+	color: crimson;
+	font-size: calc(0.7vw + 0.7vh + 2vmin);
+	text-align: center;
+}
+
+
+
+

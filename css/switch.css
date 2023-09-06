@@ -1,0 +1,83 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #222125;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  /* background: url('../img/ico/moon2.svg') 100% no-repeat; */
+}
+
+/*
+.dark-theme .slider {
+  background: url('../img/ico/sun2.svg') 100% no-repeat;
+}
+*/
+
+.ico-swich {
+  margin: 2px 3px 0 0;
+  height: 22px;
+  background: url('../img/ico/moon.svg') 100% no-repeat;
+}
+
+.dark-theme .ico-swich {
+  margin: 3px 29px 0 0;
+  height: 22px;
+  background: url('../img/ico/sun.svg') 100% no-repeat;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 20px;
+  background-color: #f4f6f7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark-theme .slider:before {
+  background-color: #222125;
+}
+
+input:checked + .slider {
+  background-color: #f4f6f7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #f4f6f7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

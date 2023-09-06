@@ -1,0 +1,111 @@
+.decor {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 900px) {
+    .decor p, .decor a {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+  }
+
+/*  плашки декори */
+
+.decory {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    width: 136px;
+    height: 136px;
+    margin: 15px 5px;
+  }
+  
+  .item img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1180px) {
+    .item {
+    width: 126px;
+    height: 126px;
+    margin: 15px 5px;
+    font-size: 0.8em;
+  }
+  }
+  
+  @media screen and (max-width: 900px) {
+      .item {
+      width: 100px;
+      height: 100px;
+      margin: 15px 5px;
+      font-size: 0.8em;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        .item {
+        width: 72px;
+        height: 72px;
+        margin: 15px 5px;
+        font-size: 0.8em;
+      }
+      }
+  
+    @media screen and (max-width: 600px) {
+      .item {
+        margin: 12px 5px;
+      }
+      }
+  
+  .item p, .item a {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .item p, .item a {
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    }
+  
+  .item a {
+    cursor: pointer;
+    color: #FFF;
+  }
+
+  .plashkared {
+    display: flex;
+    justify-content: center; /* Вирівнюємо по горизонталі */
+    align-items: center; /* Вирівнюємо по вертикалі */
+    background-color: crimson;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+  @media screen and (max-width: 600px) {
+      .plashkared {
+      width: 100%;
+      min-height: 72px;
+      padding: 7px;
+    }
+    }
+    @media screen and (max-width: 900px) {
+      .plashkared span{
+       display: none;
+      }
+      }
+  

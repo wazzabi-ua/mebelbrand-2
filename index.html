@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="site.webmanifest" /><!-- ??? -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- galery -->
+
+
+
+  <title>М'які меблі Mebelbrand.</title>
+</head>
+
+<body>
+  <!-- Hero -->
+  <div class="page">
+    <section class="et-hero-tabs">
+      <!--
+        <div class="center-text">
+           <h1>М'які меблі від виробника.</h1>
+          <h3>М'які меблі від виробника.</h3>
+        </div>
+      -->
+      <div class="et-hero-tabs-container">
+        <!-- НавБар -->
+        <div class="container-menu-top bor-bot layout">
+          <div class="colum-half">
+            <div class="left-two">
+              <a href="index.html">
+                <div class="logo"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="colum-half-rigth rigth-two">
+            <div class="switch">
+              <input type="checkbox" id="themeSwitch" />
+              <label for="themeSwitch" class="slider">
+                <div class="ico-swich"></div>
+              </label>
+            </div>
+
+            <div class="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- підвантаження меню -->
+            <div class="menu">
+              <div w3-include-html="components/menu.html"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Кінець НавБар -->
+
+        <div class="container-menu layout">
+          <a class="et-hero-tab start-ico" href="#tab-sectionOne">
+            <div class="ico-sticky-furniture sofa-ico">
+              <div class="sofa-ico-img"></div>
+            </div>
+            <span>
+              <p>прямий диван</p>
+              <strong>
+                <h4>Лондон</h4>
+              </strong>
+            </span>
+          </a>
+          <a class="et-hero-tab" href="#tab-sectionThree">
+            <div class="ico-sticky dimensions-ico"></div>
+            <span>Розміри</span>
+          </a>
+          <div class="slash"></div>
+          <a class="et-hero-tab" href="#tab-sectionTwo">
+            <div class="ico-sticky galery-ico"></div>
+            <span>Галерея</span>
+          </a>
+          <div class="slash"></div>
+          <a class="et-hero-tab" href="#tab-sectionFour">
+            <div class="ico-sticky decor-ico"></div>
+            <span>Декори</span>
+          </a>
+          <a class="et-hero-tab no-under" href="#tab-other">
+            <div class="crimson">
+              <div class="ico-sticky sale-ico"></div>
+              <span>Купити</span>
+            </div>
+          </a>
+          <div class="et-hero-tab-slider"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <!-- Section-1 -->
+      <section class="et-slide" id="tab-sectionOne">
+        <div class="block-slide layout">
+          <div class="tab-container">
+            <div class="tab-buttons">
+              <button class="tab-button mny active" data-tab="tab1">
+                <div class="ico-tabs-group">
+                  <div class="divan-ss"></div>
+                  <span class="hvostik"></span>
+                  <div>
+              </button>
+              <button class="tab-button mny" data-tab="tab2">
+                <div class="ico-tabs-group">
+                  <div class="divan-rr"></div>
+                  <span class="hvostik-two"></span>
+                </div>
+              </button>
+            </div>
+            <div class="tab-content-wrapper">
+              <div id="tab1" class="tab-content mny active">
+
+                <div class="plashka gradient">
+                  <div class="plashkabox">
+                    <p>-10%</p>
+                  </div>
+              </div>
+
+                <!-- <h1>Диван</h1> -->
+                <br>
+                <div class="infasofe">
+                  <div class="infasofebox">
+                    <div class="pfive">
+                      <div class="wtr"></div>
+                    </div>
+                    <div class="wsev">
+                      <p>Можливі 2 види розкрою</br>
+                        компоновки
+                        декорів</p>
+                    </div>
+                  </div>
+                  <!--
+                  <div class="infasofebox">
+                    <div class="wtr"></div>
+                    <div class="wsev">
+                      <p>Декоративні</br>подушки</p>
+                    </div>
+                  </div>
+                  -->
+                </div>
+
+                <picture>
+                  <source srcset="img/divan/london/london-2023.png" width="90%" type="image/jpeg"
+                    media="(min-width:1200px)">
+                  <source srcset="img/divan/london/london-2023.png" width="95%" type="image/jpeg"
+                    media="(min-width:1024px)">
+                  <source srcset="img/divan/london/london-2023-sm.png" width="100%" type="image/jpeg"
+                    media="( max-width:768px)">
+                  <img src="img/divan/london/london-2023.png" width="100%" alt="Диван Лондон">
+                </picture>
+                <div class="nazva-mob">
+                  <span>
+                    <p>прямий диван</p>
+                    <strong>
+                      <h2>Лондон</h2>
+                    </strong>
+                  </span>
+
+                </div>
+
+              </div>
+              <div id="tab2" class="tab-content mny">
+
+<!--
+                <div class="plashkainfo">
+                    <button class="openModalBtn" data-modal="modal2"><img src="img/ico/circle-information.svg" width="100%" alt="#"></button>
+              </div>
+                  -->
+
+                <div id="slideshow-container">
+                  <img src="img/divan/london/animation/0001.png" class="slide">
+                  <img src="img/divan/london/animation/0006.png" class="slide">
+                  <img src="img/divan/london/animation/0011.png" class="slide">
+                  <img src="img/divan/london/animation/0021.png" class="slide">
+                  <img src="img/divan/london/animation/0026.png" class="slide">
+                  <img src="img/divan/london/animation/0031.png" class="slide">
+                  <img src="img/divan/london/animation/0036.png" class="slide">
+                  <img src="img/divan/london/animation/0041.png" class="slide">
+                  <img src="img/divan/london/animation/0046.png" class="slide">
+                  <img src="img/divan/london/animation/0051.png" class="slide">
+                  <img src="img/divan/london/animation/0056.png" class="slide">
+                  <img src="img/divan/london/animation/0061.png" class="slide">
+                  <img src="img/divan/london/animation/0066.png" class="slide">
+                  <img src="img/divan/london/animation/0071.png" class="slide">
+                  <img src="img/divan/london/animation/0076.png" class="slide">
+                  <img src="img/divan/london/animation/0081.png" class="slide">
+                  <img src="img/divan/london/animation/0086.png" class="slide">
+                  <img src="img/divan/london/animation/0131.png" class="slide">
+                  <img src="img/divan/london/animation/0136.png" class="slide">
+                  <img src="img/divan/london/animation/0141.png" class="slide">
+                  <img src="img/divan/london/animation/0146.png" class="slide">
+                  <img src="img/divan/london/animation/0151.png" class="slide">
+                  <img src="img/divan/london/animation/0156.png" class="slide">
+                  <img src="img/divan/london/animation/0161.png" class="slide">
+                  <img src="img/divan/london/animation/0166.png" class="slide">
+                  <img src="img/divan/london/animation/0171.png" class="slide">
+                  <img src="img/divan/london/animation/0176.png" class="slide">
+                  <img src="img/divan/london/animation/0181.png" class="slide">
+                  <img src="img/divan/london/animation/0186.png" class="slide">
+                  <img src="img/divan/london/animation/0191.png" class="slide">
+                  <img src="img/divan/london/animation/0196.png" class="slide">
+                  <img src="img/divan/london/animation/0201.png" class="slide">
+                  <img src="img/divan/london/animation/0206.png" class="slide">
+                  <img src="img/divan/london/animation/0211.png" class="slide">
+                  <img src="img/divan/london/animation/0216.png" class="slide">
+                  <img src="img/divan/london/animation/0221.png" class="slide">
+                  <img src="img/divan/london/animation/0226.png" class="slide">
+                  <img src="img/divan/london/animation/0231.png" class="slide">
+                  <img src="img/divan/london/animation/0236.png" class="slide">
+                  <img src="img/divan/london/animation/0241.png" class="slide">
+                  <img src="img/divan/london/animation/0246.png" class="slide">
+                </div>
+
+                
+
+                <div class="buflex">
+                  <button id="play-button"><img src="img/ico/play.svg"></button>
+                  <button id="stop-button"><img src="img/ico/stop.svg"></button>
+                  <button id="prev-button"><img src="img/ico/priv.svg"></button>
+                  <button id="next-button"><img src="img/ico/next.svg"></button>
+                </div>
+
+                <div class="nazva-mob">
+                  <span>
+                    <p>прямий диван</p>
+                    <strong>
+                      <h2>Лондон</h2>
+                    </strong>
+                  </span>
+
+                </div>
+
+                <p class="opismesch">Механізм розкладання тип «Тік-так».</p>
+
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Section-2 -->
+      <section class="et-slide-w" id="tab-sectionThree">
+        <div class="rozmiry">
+          <div class="rozmiry-box">
+
+            <div class="rozmiry-column">
+
+              <table class="tabroz">
+                <thead>
+                  <tr>
+                    <th class="lt">Розміри, мм</th>
+                    <th>Ширина</th>
+                    <th>Висота</th>
+                    <th>Довжина</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="lt">Складений</td>
+                    <td>2450</td>
+                    <td>750</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td class="lt">Розкладений</td>
+                    <td>2450</td>
+                    <td>750</td>
+                    <td>1500</td>
+                  </tr>
+                  <tr>
+                    <td class="lt">Спального місця</td>
+                    <td>1900</td>
+                    <td>-</td>
+                    <td>1400</td>
+                  </tr>
+                  <tr>
+                    <td class="lt">Сидіння</td>
+                    <td>-</td>
+                    <td>450</td>
+                    <td>-</td>
+                  </tr>
+                <tbody>
+              </table>
+
+              <div class="opis-column">
+
+                <div class="warning-blok ptopten">
+                  <div><img src="img/ico/warning-alt.svg" alt="arrow left" width="25px" /></div>
+                  <div class="pten">Максимальне навантаження на одне спальне місце: 120 кг.</div>
+                </div>
+
+                <div class="line-ten"></div>
+                <div class="opis-box">
+                  <p class="left-p buzoc-plashka"><strong>Матеріали та наповнення</strong></p>
+                  <p class="pten ptopten">
+                    <strong>Каркас:</strong> сосновий брус шліфований, ДВП білий, біле ламіноване ДСП.</br>
+                    <strong>Опори:</strong> пластикові ніжки H-30.</br>
+                    <strong>Спальне місце: </strong> ламель букова, пружинний блок «Боннель», ППУ 25-28
+                    щільності, синтепон, повсть.</br>
+                    <strong>Подушки:</strong> ППУ та холлофайбер.</br>
+                  </p>
+                  <button class="openModalBtn btn-orange" data-modal="modal0">Докладніше</button>
+                </div>
+
+                <div class="line-ten"></div>
+                <div class="opis-box">
+                  <p class="left-p buzoc-plashka pten"><strong>Комплектація</strong></p>
+                  <p class="pten">
+                    <button class="openModalBtn btn-grey" data-modal="modal1">Ніша для білизни</button>
+                    <button class="openModalBtn btn-grey" data-modal="modal2">Механізм тік-так</button>
+                    <button class="openModalBtn btn-grey" data-modal="modal3">Подушки</button>
+                  </p>
+                </div>
+
+
+                <!-- modal-0 -->
+                <div class="modal" id="modal0">
+                  <div class="modal-content">
+                    <button class="closeModalBtn"></button>
+
+                    <div class="img-box-rozmiry-m">
+
+                      <div class="prokogo">
+                        <div class="vmastprokogo">
+                          <span>
+                            <p>прямий диван</p>
+                            <strong>
+                              <p>Лондон</p>
+                            </strong>
+                          </span>
+                        </div>
+                      </div>
+
+
+                      <button class="toggle-elements-button">
+                        <div class="img-eye-m">
+                          <img class="eye-icon open-eye-icon" src="img/ico/eye-closed.svg" width="25px"
+                            alt="Open Eye Icon">
+                          <img class="eye-icon closed-eye-icon hidden" src="img/ico/eye.svg" width="25px"
+                            alt="Closed Eye Icon">
+                        </div>
+                      </button>
+
+                      <div class="img-box-rozmiry-m">
+                        <div class="marker element-to-hide" style="top: 30%; left: 0%;">A</div>
+                        <div class="marker element-to-hide" style="top: 57%; left: 22%;">A</div>
+                        <div class="marker element-to-hide" style="top: 36%; left: 1%;">B</div>
+                        <div class="marker element-to-hide" style="top: 62%; left: 44%;">C</div>
+                        <div class="marker element-to-hide" style="top: 52%; left: 54%;">D</div>
+                        <div class="marker element-to-hide" style="top: 19%; left: 38%;">E</div>
+                        <div class="marker element-to-hide" style="top: 22%; left: 47%;">F</div>
+                        <div class="marker element-to-hide" style="top: 32%; left: 75%;">G</div>
+                        <div class="marker element-to-hide" style="top: 49%; left: 65%;">H</div>
+                        <div class="marker element-to-hide" style="top: 75%; left: 63%;">O</div>
+                        <div class="marker element-to-hide" style="top: 80%; left: 52%;">P</div>
+                        <div class="marker element-to-hide" style="top: 60%; left: 72.5%;">S</div>
+                        <div class="marker element-to-hide" style="top: 60%; left: 59%;">V</div>
+
+                        <div class="picha">
+                          <img src="img/divan/london/london-napovnenya-2023.png" width="100%" alt="Лондон наповнення">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-twen"></div>
+                    <div class="colo-red">
+                      <button><span>A</span> - брус сосновий;</button>
+                      <button><span>B</span> - ДВП;</button>
+                      <button><span>С</span> - букова ламель;</button>
+                      <button><span>D</span> - пружиний блок;</button>
+                      <button><span>E</span> - пружиний блок;</button>
+                      <button><span>F</span> - флізелін;</button>
+                      <button><span>G</span> - оббивний матеріал;</button>
+                      <button><span>H</span> - пінополіурітан;</button>
+                      <button><span>O</span> - ДСП шліфована;</button>
+                      <button><span>P</span> - ДСП ламінований білий;</button>
+                      <button><span>S</span> - синтепон;</button>
+                      <button><span>V</span> - войлок;</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- modal-1 -->
+                <div class="modal" id="modal1">
+                  <div class="centermod">
+
+                    <div class="modal-content">
+                      <div>
+                        <button class="closeModalBtn"></button>
+                      </div>
+
+
+                      <div class="rozmod">
+
+                        <div class="prokogo">
+                          <div class="vmastprokogo">
+                            <span>
+                              <p>прямий диван</p>
+                              <strong>
+                                <p>Лондон</p>
+                              </strong>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="rozcol">
+                          <img src="img/divan/london/nisha-2.png" alt="Лондон ніша">
+
+                        </div>
+
+                        <div class="rozcol">
+                          <img src="img/divan/london/nisha-1.png" alt="Лондон ніша">
+                        </div>
+
+                        <div class="line-ten"></div>
+
+                        <div class="opis-box pbtwen">
+                          <p class="centerp buzoc-plashka"><strong>Зручна ніша для зберігання постільної
+                              білизни.</strong></p>
+                        </div>
+                        <div class="line-ten"></div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal" id="modal2">
+                  <div class="centermod">
+                    <div class="modal-content">
+                      <button class="closeModalBtn"></button>
+                      <h2>Modal 2</h2>
+                      <p>This is the content of Modal 2.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal" id="modal3">
+                  <div class="centermod">
+                    <div class="modal-content">
+                      <button class="closeModalBtn"></button>
+                      <h2>Modal 3</h2>
+                      <p>This is the content of Modal 3.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="rozmiry-column">
+              <div class="opis-column col-non">
+
+
+
+                <button class="toggle-elements-button">
+                  <div class="img-eye">
+                    <img class="eye-icon open-eye-icon" src="img/ico/eye-closed.svg" width="25px" alt="Open Eye Icon">
+                    <img class="eye-icon closed-eye-icon hidden" src="img/ico/eye.svg" width="25px"
+                      alt="Closed Eye Icon">
+                  </div>
+                </button>
+
+
+                <div class="img-box-rozmiry">
+                  <div class="marker element-to-hide" style="top: 30%; left: 0%;">A</div>
+                  <div class="marker element-to-hide" style="top: 57%; left: 22%;">A</div>
+                  <div class="marker element-to-hide" style="top: 36%; left: 1%;">B</div>
+                  <div class="marker element-to-hide" style="top: 62%; left: 44%;">C</div>
+                  <div class="marker element-to-hide" style="top: 52%; left: 54%;">D</div>
+                  <div class="marker element-to-hide" style="top: 19%; left: 38%;">E</div>
+                  <div class="marker element-to-hide" style="top: 22%; left: 47%;">F</div>
+                  <div class="marker element-to-hide" style="top: 32%; left: 75%;">G</div>
+                  <div class="marker element-to-hide" style="top: 49%; left: 65%;">H</div>
+                  <div class="marker element-to-hide" style="top: 75%; left: 63%;">O</div>
+                  <div class="marker element-to-hide" style="top: 80%; left: 52%;">P</div>
+                  <div class="marker element-to-hide" style="top: 60%; left: 72.5%;">S</div>
+                  <div class="marker element-to-hide" style="top: 60%; left: 59%;">V</div>
+                  <img src="img/divan/london/london-napovnenya-2023.png" width="100%" alt="Лондон наповнення">
+                </div>
+                <div class="colo-red">
+                  <button><span>A</span> - брус сосновий;</button>
+                  <button><span>B</span> - ДВП;</button>
+                  <button><span>С</span> - букова ламель;</button>
+                  <button><span>D</span> - пружиний блок;</button>
+                  <button><span>E</span> - пружиний блок;</button>
+                  <button><span>F</span> - флізелін;</button>
+                  <button><span>G</span> - оббивний матеріал;</button>
+                  <button><span>H</span> - пінополіурітан;</button>
+                  <button><span>O</span> - ДСП шліфована;</button>
+                  <button><span>P</span> - ДСП ламінований білий;</button>
+                  <button><span>S</span> - синтепон;</button>
+                  <button><span>V</span> - войлок;</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  </section>
+  <!-- Section-3 -->
+  <section class="et-slide-g" id="tab-sectionTwo">
+    <!-- <h1>Галерея</h1> -->
+
+    <div class="nazva-mob">
+      <span>
+        <p>прямий диван</p>
+        <strong>
+          <h2>Лондон</h2>
+        </strong>
+      </span>
+    </div>
+<!-- звичайний пробіл в 25 пікселів -->
+    <div class="probil-25 hidenn"></div>
+
+    <div class="image-gallery-container">
+
+      <div class="image-gallery-preview">
+        <img id="active-image" src="img/divan/london/gallery/london-01.jpg" alt="Active Image">
+      </div>
+
+      <div class="image-gallery-thumbnails">
+        <img class="thumbnail active" src="img/divan/london/gallery/london-01.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="img/divan/london/gallery/london-02.jpg" alt="Thumbnail 2">
+        <img class="thumbnail" src="img/divan/london/gallery/london-03.jpg" alt="Thumbnail 3">
+        <img class="thumbnail" src="img/divan/london/gallery/london-04.jpg" alt="Thumbnail 4">
+        <!-- Додайте інші мініатюри зображень тут -->
+      </div>
+      
+    </div>
+
+    <p class="opisgallery">
+      <br>
+      Колір та фактура товару, які ви бачите на екрані, можуть відрізнятися від реального вигляду. Якщо у вас є можливість, радимо ознайомитися з зразками тканини та фурнітури особисто.
+    </p>
+
+
+    <!-- звичайний пробіл в 100 пікселів -->
+    <div class="probil-100 hidenn"></div>
+
+  </section>
+  <!-- Section-4 -->
+  <section class="et-slide-w" id="tab-sectionFour">
+    <div class="decor">
+
+      <div w3-include-html="components/decor-mocco.html"></div>
+    </div>
+  </section>
+  <!-- Section-5 -->
+  <section class="et-slide" id="tab-other">
+    <!-- <h1>Купити</h1> -->
+    <div class="box-sale">
+      <div>
+        <p class="mttenten">
+          Придбати наші меблі можливо просто зв'язавшись з нами:<br>
+          (098) 993 83 94, (067) 548 23 20, mebelbrand@ukr.net
+        </p>
+        <br>
+        <div class="magline">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Інтернет-магазин <a href="http://mebelbrand.com.ua">mebelbrand.com.ua</a></div>
+          <div class="regim">Пн. - Нд. <br>Цілодобово</div>
+        </div>
+        <br>
+        <p class="mtten mbten">
+          Наші магазини-виставки:
+        </p>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Київська область, м. Біла Церква, вул.Матросова, 48</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <div class="magline mtten">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Київська область, м. Біла Церква, вул.Таращанська 2м</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <div class="magline mtten">
+          <div class="imglogomag"><img src="img/256x256.png" alt=""></div>
+          <div class="adresa">Вишгородський р-н, м.Димер, вул. Соборна 8</div>
+          <div class="regim">Пн. - Пт. <br>9:00 - 16:00</div>
+        </div>
+
+        <br>
+        <p class="mtten mbten">
+          Магазини-партнери:
+        </p>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/tab-logo.png" alt=""></div>
+          <div class="adresa"><a href="https://www.taburetka.ua">www.taburetka.ua</a></div>
+        </div>
+
+        <div class="magline">
+          <div class="imglogomag"><img src="img/dub-logo.png" alt=""></div>
+          <div class="adresa"><a href="https://www.dybok.com.ua">www.dybok.com.ua</a></div>
+        </div>
+
+      </div>
+
+      <div class="magimg pteno">
+        <img src="img/mag.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div w3-include-html="components/footer.html"></div>
+    </div>
+    <!-- зв'язок -->
+    <div class="container-contact">
+      <div w3-include-html="components/communication.html"></div>
+    </div>
+  </footer>
+  </div>
+  <script type="module" src="js/gallery.js"></script>
+  <script type="module" src="js/include.js"></script>
+  <script type="module" src="js/menu.js"></script>
+  <script type="module" src="js/sticky.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/tabs.js"></script>
+  <script type="module" src="js/modal.js"></script>
+  <script type="module" src="js/hiden.js"></script>
+  <script type="module" src="js/animation.js"></script>
+  <!-- Sticky-meny -->
+</body>
+
+</html>

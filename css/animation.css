@@ -1,0 +1,57 @@
+/* Стилі для слайд-контейнера */
+#slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Стилі для слайдів */
+  .slide {
+    display: none;
+    width: 100%;
+    max-width: 812px;
+    margin-top: -40px;
+  }
+
+  @media (max-width: 600px) {
+    #slideshow-container {
+      margin-top: 60px 
+    }
+  }
+  
+  /* Приховати стрілки прокрутки за замовчуванням */
+  #prev-button,
+  #next-button, #play-button {
+    display: none;
+  }
+
+  .buflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @media (max-width: 600px) {
+    .buflex {
+      margin-top: 20px 
+    }
+  }
+
+  .buflex button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 10px;
+border: 1px solid #9088a0;
+border-radius: 10px;
+cursor: pointer;
+margin: 5px;
+
+  }
+
+  .buflex img {
+height: 20px;
+
+  }
+  

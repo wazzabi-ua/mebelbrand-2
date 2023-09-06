@@ -1,0 +1,86 @@
+/* звязок мобільний */
+.container-contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+@media (min-width: 900px) {
+  .container-contact {
+    display: none;
+  }
+}
+.row-mny {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.col-mny {
+  padding: 0;
+  line-height: 2.2;
+  flex: 1;
+}
+
+.banerok {
+  border-radius: 10px 0 0 0;
+  font-size: 1em;
+  background-color: #9069ae;
+  text-align: center;
+}
+
+.banerok-phone {
+  border-radius: 0 10px 0 0;
+  font-size: 1em;
+  background-color: #28b463;
+  text-align: center;
+}
+
+.banerok-telegram {
+  font-size: 1em;
+  background-color: #39aef4;
+  text-align: center;
+}
+
+.banerok img,
+.banerok-phone img,
+.banerok-telegram img {
+  vertical-align: middle;
+}
+
+@media (max-width: 360px) {
+  .banerok span,
+  .banerok-phone span,
+  .banerok-telegram span {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .banerok a,
+  .banerok-phone a,
+  .banerok-telegram a {
+    font-size: 0.8em;
+  }
+}
+
+.banerok a,
+.banerok-telegram a,
+.banerok-phone a {
+  color: #ffffff;
+}
+
+html.dark .banerok a,
+html.dark .banerok-telegram a,
+html.dark .banerok-phone a {
+  color: #ffffff;
+}

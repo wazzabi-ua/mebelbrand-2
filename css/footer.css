@@ -1,0 +1,34 @@
+footer {
+  min-height: 200px;
+  background-color: brown;
+}
+
+.container-footer {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+}
+
+.container-footer div {
+  flex: 1;
+}
+
+.colfoot {
+  padding: 20px;
+  text-align: center;
+}
+
+.colfoot a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .container-footer div {
+    flex-direction: column;
+  }
+}
